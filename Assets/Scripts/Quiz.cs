@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Quiz : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI questionText;
+    [SerializeField] TextMeshProUGUI scoreTMP;
     [Header("Answers")]
     [SerializeField] GameObject[] answerButtons;
     [Header("Questions")]
@@ -20,11 +21,15 @@ public class Quiz : MonoBehaviour
     [SerializeField] Image imageTimer;
     Timer timer;
     bool hasAnsweredEarly;
+    ScoreKeeper scoreKeeper;
+    [SerializeField] Slider slider;
 
     void Start()
     {
         timer = FindObjectOfType<Timer>();
-        GetNextQuestion();
+        scoreKeeper = FindObjectOfType<ScoreKeeper>();
+        slider.maxValue=questions.Count;
+        slider.value=0;
     }
 
     public void Update()
@@ -42,6 +47,7 @@ public class Quiz : MonoBehaviour
             DisplayAnswer(-1);
             SetButtonState(false);
         }
+        scoreTMP.text="Score is: "+scoreKeeper.CalculateScore();
     }
 
     public void GetNextQuestion()
@@ -54,6 +60,8 @@ public class Quiz : MonoBehaviour
             // Ensure we get a new random question and remove it from the list
             GetRandomQuestion();
             DisplayQuestion();
+            slider.value++;
+            scoreKeeper.IncrementQuestionSeen();
         }
         else
         {
@@ -94,6 +102,7 @@ public class Quiz : MonoBehaviour
             questionText.text = "Correct Answer!";
             Image image = answerButtons[index].GetComponent<Image>();
             image.sprite = correctAnsSprite;
+            scoreKeeper.IncrementCorrectAnswer();
         }
         else
         {
