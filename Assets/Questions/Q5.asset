@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52a46354d7e30af03b9888321232edac, type: 3}
   m_Name: Q5
   m_EditorClassIdentifier: 
-  question: this is question
+  question: In deep learning, what does CNN stand for?
   answers:
-  - 
-  - 
-  - 
-  - 
+  - A) Convolutional Neural Network
+  - B) Constant Neural Network
+  - C) Classifier Neural Network
+  - D) Conditional Neural Network
   correctAnsIndex: 0

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52a46354d7e30af03b9888321232edac, type: 3}
   m_Name: Q3
   m_EditorClassIdentifier: 
-  question: this is question
+  question: Which of the following is a type of supervised learning?
   answers:
-  - 
-  - 
-  - 
-  - 
-  correctAnsIndex: 0
+  - 'A) Clustering '
+  - B) Regression
+  - C) Association
+  - D) Dimensionality Reduction
+  correctAnsIndex: 1

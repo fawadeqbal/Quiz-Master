@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52a46354d7e30af03b9888321232edac, type: 3}
   m_Name: Q4
   m_EditorClassIdentifier: 
-  question: this is question
+  question: Which of the following is NOT a part of natural language processing (NLP)?
   answers:
-  - 
-  - 
-  - 
-  - 
-  correctAnsIndex: 0
+  - A) Tokenization
+  - B) Lemmatization
+  - C) Convolution
+  - D) Named Entity Recognition
+  correctAnsIndex: 2
