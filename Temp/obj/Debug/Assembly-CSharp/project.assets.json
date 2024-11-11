@@ -1,0 +1,66 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETStandard,Version=v2.1": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETStandard,Version=v2.1": []
+  },
+  "packageFolders": {
+    "/home/fawad/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/fawad/FA21-BSE-012/Fall 24/Game/LabWork/Quiz Master/Assembly-CSharp.csproj",
+      "projectName": "Assembly-CSharp",
+      "projectPath": "/home/fawad/FA21-BSE-012/Fall 24/Game/LabWork/Quiz Master/Assembly-CSharp.csproj",
+      "packagesPath": "/home/fawad/.nuget/packages/",
+      "outputPath": "/home/fawad/FA21-BSE-012/Fall 24/Game/LabWork/Quiz Master/Temp/obj/Debug/Assembly-CSharp/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/fawad/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netstandard2.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "netstandard2.1": {
+        "targetAlias": "netstandard2.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.403/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
